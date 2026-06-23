@@ -1,0 +1,330 @@
+1. Why do we convert words into vectors?
+
+Answer:
+Computers cannot understand text directly. Converting words into vectors allows mathematical operations, similarity calculations, and machine learning.
+
+2. Why can't we use normal numbers instead of embeddings?
+
+Answer:
+Normal numbers don't represent relationships between words. Embeddings preserve semantic meaning and similarity.
+
+3. Why do similar words have similar vectors?
+
+Answer:
+Because during training, words appearing in similar contexts learn similar vector representations.
+
+4. What is the difference between Word2Vec and GloVe?
+
+Answer:
+
+Word2Vec
+
+Predictive model
+Learns by predicting context words
+
+GloVe
+
+Count-based model
+Learns using global word co-occurrence statistics
+5. Why use a pre-trained model?
+
+Answer:
+Training requires huge datasets and computational power. Pre-trained models are already trained and ready to use.
+
+6. What happens if a word is not present in the vocabulary?
+
+Answer:
+The model throws a KeyError or Out-of-Vocabulary (OOV) error because no embedding exists for that word.
+
+7. Why is Cosine Similarity preferred over Euclidean Distance?
+
+Answer:
+Cosine similarity compares the direction of vectors rather than their magnitude, making it better for measuring semantic similarity.
+
+8. Why are embeddings high-dimensional?
+
+Answer:
+Higher dimensions capture more semantic features and relationships between words.
+
+9. What is the drawback of one-hot encoding?
+
+Answer:
+It creates sparse vectors and cannot capture semantic similarity.
+
+10. Can Word2Vec understand grammar?
+
+Answer:
+No.
+It learns semantic relationships, not grammatical rules.
+
+11. Why do we reduce dimensions using PCA or t-SNE?
+
+Answer:
+Humans cannot visualize 100-dimensional vectors, so PCA/t-SNE converts them into 2 dimensions.
+
+12. Difference between PCA and t-SNE?
+
+Answer:
+
+PCA
+
+Linear technique
+Faster
+Preserves global structure
+
+t-SNE
+
+Non-linear
+Better visualization
+Preserves local neighborhoods
+13. Why is t-SNE better for visualization?
+
+Answer:
+Because it keeps similar words close together, making clusters easier to observe.
+
+14. Why isn't t-SNE used for training?
+
+Answer:
+It is only a visualization technique, not a learning algorithm.
+
+15. What is a corpus?
+
+Answer:
+A collection of text used for training NLP models.
+
+16. Why do we tokenize text?
+
+Answer:
+Models process words individually, so sentences are split into tokens.
+
+17. Why convert text to lowercase?
+
+Answer:
+To avoid treating "Doctor" and "doctor" as different words.
+
+18. What happens if epochs are increased?
+
+Answer:
+The model learns better up to a limit, but too many epochs may cause overfitting.
+
+19. What happens if vector_size increases?
+
+Answer:
+The model captures richer information but requires more memory and training time.
+
+20. What happens if window size increases?
+
+Answer:
+The model considers a larger context while learning.
+
+21. Why is min_count used?
+
+Answer:
+To remove very rare words that contribute little to learning.
+
+22. Difference between CBOW and Skip-Gram?
+
+Answer:
+
+CBOW
+
+Predicts the center word
+Faster
+Better for frequent words
+
+Skip-Gram
+
+Predicts surrounding words
+Slower
+Better for rare words
+23. Which architecture does Word2Vec use by default?
+
+Answer:
+CBOW
+
+(Skip-Gram is used when sg=1.)
+
+24. What is Prompt Engineering?
+
+Answer:
+Designing effective prompts to obtain better responses from an LLM.
+
+25. Why does changing one word improve GPT output?
+
+Answer:
+LLMs generate responses based on context. Better context leads to better responses.
+
+26. What is Prompt Enrichment?
+
+Answer:
+Replacing or adding semantically meaningful words to improve an AI prompt.
+
+27. Difference between GPT-2 and GloVe?
+
+Answer:
+
+GPT-2
+
+Generates text
+
+GloVe
+
+Finds semantic relationships between words
+28. Difference between GPT and BERT?
+
+Answer:
+
+GPT
+
+Decoder-only
+Text Generation
+
+BERT
+
+Encoder-only
+Text Understanding
+29. Difference between GPT-2 and T5?
+
+Answer:
+
+GPT-2
+
+Mainly text generation
+
+T5
+
+Text-to-Text model
+Summarization
+Translation
+Question Answering
+30. Why is T5 called Text-to-Text?
+
+Answer:
+Because every task is converted into text input and text output.
+
+31. Why use Hugging Face?
+
+Answer:
+It provides ready-to-use pre-trained NLP models.
+
+32. What does pipeline() do?
+
+Answer:
+Automatically loads the required model and tokenizer for an NLP task.
+
+33. Difference between LangChain and Hugging Face?
+
+Answer:
+
+LangChain
+
+Framework for building LLM applications
+
+Hugging Face
+
+Provides pre-trained models
+34. Why do we need API Keys?
+
+Answer:
+To authenticate and securely access cloud-hosted AI models.
+
+35. Why is Cohere cloud-based?
+
+Answer:
+The model runs on Cohere's servers and is accessed through an API.
+
+36. Difference between Local Models and Cloud Models?
+
+Answer:
+
+Local
+
+Runs on your computer
+
+Cloud
+
+Runs on remote servers
+37. What is an LLM?
+
+Answer:
+A Large Language Model trained on billions of words to understand and generate human language.
+
+38. What is RAG?
+
+Answer:
+Retrieval-Augmented Generation retrieves relevant documents before generating an answer.
+
+39. Why is RAG better than a normal chatbot?
+
+Answer:
+Because it answers using external documents instead of only its pre-trained knowledge.
+
+40. Why are PDFs split into chunks?
+
+Answer:
+Large documents cannot be processed at once, so chunking improves retrieval accuracy.
+
+41. Why create embeddings for PDFs?
+
+Answer:
+Embeddings allow semantic search over document content.
+
+42. What is a Vector Database?
+
+Answer:
+A database that stores embeddings for efficient similarity search.
+
+43. What is Chroma DB?
+
+Answer:
+An open-source vector database used for storing embeddings.
+
+44. Difference between Database and Vector Database?
+
+Answer:
+
+Database
+
+Stores structured data
+
+Vector Database
+
+Stores embeddings for similarity search
+45. What is a Retriever?
+
+Answer:
+A component that searches the vector database and returns the most relevant document chunks.
+
+46. Why don't we directly give the whole PDF to the LLM?
+
+Answer:
+LLMs have context length limits. Chunking and retrieval are more efficient.
+
+47. What is Pydantic?
+
+Answer:
+A Python library used for data validation and structured models.
+
+48. Why use Wikipedia API instead of web scraping?
+
+Answer:
+It provides structured and reliable access to Wikipedia data.
+
+49. Why is User-Agent mandatory?
+
+Answer:
+Wikipedia requires it to identify the application making requests.
+
+50. Which experiment is the most complex and why?
+
+Answer:
+Experiment 10, because it combines:
+
+LangChain
+Cohere LLM
+Embeddings
+Vector Database
+PDF Loader
+Text Splitter
+Retriever
+RAG Pipeline
