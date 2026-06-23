@@ -1,0 +1,117 @@
+1. What is Word Embedding?
+
+Answer:
+Word embedding is a numerical vector representation of words that captures their meaning and semantic relationships.
+
+2. What is Gensim?
+
+Answer:
+Gensim is a Python library used for Natural Language Processing (NLP) to work with word embedding models like Word2Vec, GloVe, and FastText.
+
+3. What is GloVe?
+
+Answer:
+GloVe (Global Vectors for Word Representation) is a pre-trained word embedding model trained on Wikipedia and Gigaword datasets.
+
+4. Why do we use a pre-trained model?
+
+Answer:
+A pre-trained model is already trained on a large dataset, so we don't need to train it again. It saves time and provides accurate word embeddings.
+
+5. Which pre-trained model is used in this experiment?
+
+Answer:
+The glove-wiki-gigaword-100 model is used.
+
+6. What does "100" mean in glove-wiki-gigaword-100?
+
+Answer:
+It means every word is represented using a 100-dimensional vector.
+
+7. What does api.load() do?
+
+Answer:
+It downloads and loads the pre-trained GloVe model into memory.
+
+8. What is Word Arithmetic?
+
+Answer:
+Word arithmetic performs mathematical operations on word vectors to discover semantic relationships.
+
+Example:
+King - Man + Woman = Queen
+
+9. Why does King - Man + Woman = Queen work?
+
+Answer:
+Because word embeddings capture semantic relationships between words, allowing vector arithmetic to represent analogies.
+
+10. What is Cosine Similarity?
+
+Answer:
+Cosine similarity measures how similar two word vectors are. A value closer to 1 means the words are more similar.
+
+11. What does wv.similarity() do?
+
+Answer:
+It calculates the cosine similarity between two words.
+
+12. What does wv.most_similar() do?
+
+Answer:
+It returns the top-N words that are most semantically similar to the given word.
+
+13. Why are "cat" and "dog" highly similar?
+
+Answer:
+Because they often appear in similar contexts and have similar meanings.
+
+14. What is a word vector?
+
+Answer:
+A word vector is the numerical representation of a word in multidimensional space.
+
+15. What are the applications of Word Embeddings?
+
+Answer:
+
+Machine Translation
+Sentiment Analysis
+Chatbots
+Text Classification
+Question Answering
+Recommendation Systems
+16. What is NLP?
+
+Answer:
+Natural Language Processing (NLP) is a branch of Artificial Intelligence that enables computers to understand, process, and generate human language.
+
+17. What is the output of most_similar("happy")?
+
+Answer:
+It returns the top similar words like joyful, glad, cheerful, pleased, etc.
+
+18. Can we use other pre-trained models instead of GloVe?
+
+Answer:
+Yes. Examples include:
+
+Word2Vec
+FastText
+BERT
+ELMo
+19. What is the advantage of Word Embeddings over One-Hot Encoding?
+
+Answer:
+Word embeddings capture semantic meaning and relationships, whereas one-hot encoding only represents words as sparse vectors without meaning.
+
+20. Explain the flow of the program.
+
+Answer:
+
+Import Gensim.
+Load the pre-trained GloVe model.
+Perform word arithmetic.
+Calculate similarity between words.
+Find similar words using most_similar().
+Display the results.

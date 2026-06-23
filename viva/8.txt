@@ -1,0 +1,132 @@
+1. What is the aim of Experiment 8?
+
+Answer:
+To summarize a given text using LangChain and the Cohere Large Language Model (LLM).
+
+2. What is LangChain?
+
+Answer:
+LangChain is a framework used to build applications using Large Language Models (LLMs).
+
+3. What is Cohere?
+
+Answer:
+Cohere is a company that provides Large Language Models (LLMs) for NLP tasks such as summarization, text generation, and question answering.
+
+4. Which model is used in this experiment?
+
+Answer:
+The Cohere Command-R model (command-r-08-2024).
+
+5. What is an LLM?
+
+Answer:
+A Large Language Model (LLM) is an AI model trained on massive text datasets to understand and generate human-like text.
+
+6. Why do we need an API key?
+
+Answer:
+The API key authenticates the user and allows access to Cohere's cloud-based AI models.
+
+7. What is a Prompt?
+
+Answer:
+A prompt is the input or instruction given to the AI model.
+
+8. What is Prompt Engineering?
+
+Answer:
+Prompt engineering is the process of designing effective prompts to obtain better AI-generated responses.
+
+9. What is PromptTemplate?
+
+Answer:
+PromptTemplate is a LangChain class used to create dynamic and reusable prompts.
+
+10. Why do we use PromptTemplate?
+
+Answer:
+It allows variables to be inserted into prompts dynamically instead of writing fixed prompts.
+
+11. What does ChatCohere() do?
+
+Answer:
+It connects the program to the Cohere Large Language Model.
+
+12. What does llm.invoke() do?
+
+Answer:
+It sends the prompt to the Cohere model and returns the AI-generated response.
+
+13. What is summarization?
+
+Answer:
+Summarization is the process of converting long text into a shorter version while preserving the important information.
+
+14. What is the role of LangChain in this experiment?
+
+Answer:
+LangChain manages prompt creation and communication with the LLM.
+
+15. What are the applications of this experiment?
+
+Answer:
+
+Document summarization
+Research paper summarization
+Email summarization
+Report generation
+Chatbots
+16. Explain the flow of Experiment 8.
+
+Answer:
+
+Import LangChain and Cohere libraries.
+Provide the Cohere API key.
+Create the LLM object.
+Create a prompt template.
+Pass the input text.
+Send the prompt using invoke().
+Display the summary.
+17. Why is LangChain used instead of directly calling the API?
+
+Answer:
+LangChain simplifies prompt management and makes it easier to build LLM-based applications.
+
+18. What is the difference between Experiment 7 and Experiment 8?
+
+Answer:
+
+Experiment 7 uses a pre-trained Hugging Face model (T5) for summarization.
+Experiment 8 uses LangChain with Cohere LLM for summarization.
+19. Does this experiment require training a model?
+
+Answer:
+No. It uses a pre-trained cloud-based Large Language Model provided by Cohere.
+
+20. Why is Cohere called a cloud-based model?
+
+Answer:
+Because the model runs on Cohere's servers and is accessed through the internet using an API.
+
+Extra :::
+
+Why do we use command-r-08-2024?
+
+Answer:
+It is Cohere's latest conversational Large Language Model that provides high-quality text generation and summarization.
+
+What is the output of this experiment?
+
+Answer:
+The program generates:
+
+Summary
+Key Points
+Sentiment (as requested in the prompt)
+What is the difference between LangChain and Cohere?
+
+Answer:
+
+LangChain is a framework used to build LLM applications.
+Cohere provides the Large Language Model that generates the response.

@@ -1,0 +1,113 @@
+1. What is the aim of Experiment 3?
+
+Answer:
+To train a custom Word2Vec model on a medical corpus, visualize the learned word embeddings, and find semantically similar words.
+
+2. What is Word2Vec?
+
+Answer:
+Word2Vec is a neural network-based algorithm that learns vector representations (embeddings) of words from a text corpus.
+
+3. What is a corpus?
+
+Answer:
+A corpus is a collection of text or sentences used to train an NLP model.
+
+4. Which domain is used in this experiment?
+
+Answer:
+Medical domain.
+
+5. Why is a medical corpus used?
+
+Answer:
+To learn domain-specific relationships between medical terms like treatment, diagnosis, vaccine, and therapy.
+
+6. What is tokenization?
+
+Answer:
+Tokenization is the process of splitting sentences into individual words (tokens).
+
+7. What does this line do?
+processed_corpus = [sentence.lower().split() for sentence in medical_corpus]
+
+Answer:
+It converts all sentences to lowercase and splits them into individual words for training.
+
+8. What is the difference between Experiment 1 and Experiment 3?
+
+Answer:
+
+Experiment 1 uses a pre-trained GloVe model.
+Experiment 3 trains a custom Word2Vec model on our own dataset.
+9. What does vector_size=100 mean?
+
+Answer:
+Each word is represented by a vector containing 100 numerical values.
+
+10. What does window=5 mean?
+
+Answer:
+The model considers up to 5 neighboring words on either side as context while learning word relationships.
+
+11. What does min_count=1 mean?
+
+Answer:
+Every word is included in the vocabulary, even if it appears only once.
+
+12. What does epochs=50 mean?
+
+Answer:
+The model is trained on the dataset 50 times to improve learning.
+
+13. Why is workers=4 used?
+
+Answer:
+It uses 4 CPU threads to speed up the training process.
+
+14. Why is PCA (or t-SNE in the manual) used?
+
+Answer:
+To reduce high-dimensional word vectors into 2 dimensions so they can be visualized on a graph.
+
+15. What does model.wv.most_similar() do?
+
+Answer:
+It returns the top-N words that are most semantically similar to the given word.
+
+16. Why do related words appear close together in the graph?
+
+Answer:
+Because Word2Vec learns similar vector representations for words that appear in similar contexts.
+
+17. What is a word embedding?
+
+Answer:
+A word embedding is a numerical vector representation of a word that captures its meaning and relationships with other words.
+
+18. What are the applications of Word2Vec?
+
+Answer:
+
+Chatbots
+Search engines
+Text classification
+Recommendation systems
+Sentiment analysis
+Machine translation
+19. Explain the flow of Experiment 3.
+
+Answer:
+
+Import required libraries.
+Create a medical corpus.
+Preprocess the corpus (lowercase and tokenize).
+Train the Word2Vec model.
+Generate word embeddings.
+Reduce dimensions using PCA/t-SNE.
+Visualize the embeddings.
+Find similar words.
+20. Why do we train a custom Word2Vec model?
+
+Answer:
+To learn domain-specific semantic relationships from our own dataset instead of relying on a general pre-trained model.

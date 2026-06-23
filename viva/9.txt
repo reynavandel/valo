@@ -1,0 +1,109 @@
+1. What is the aim of Experiment 9?
+
+Answer:
+To fetch institution details from Wikipedia, validate the extracted data using Pydantic, and display the information.
+
+2. What is Wikipedia API?
+
+Answer:
+Wikipedia API is a Python library used to access and retrieve information from Wikipedia pages programmatically.
+
+3. Why do we use wikipediaapi?
+
+Answer:
+To fetch information such as the summary and page content of an institution from Wikipedia.
+
+4. What is Pydantic?
+
+Answer:
+Pydantic is a Python library used for data validation and structured data modeling.
+
+5. Why is Pydantic used in this experiment?
+
+Answer:
+It ensures that the extracted institution details are stored in a structured and validated format.
+
+6. What is BaseModel?
+
+Answer:
+BaseModel is the base class in Pydantic used to define structured data models.
+
+7. What is the purpose of InstitutionDetails?
+
+Answer:
+It defines the structure for storing institution information such as founder, founded year, branches, employees, and summary.
+
+8. What is the purpose of the fetch() (or fetch_institution_details()) function?
+
+Answer:
+It retrieves information about the institution from Wikipedia and stores it in the Pydantic model.
+
+9. Why do we specify a User-Agent?
+
+Answer:
+Wikipedia requires a User-Agent to identify the application making the request and to follow its API usage policy.
+
+10. What is a User-Agent?
+
+Answer:
+A User-Agent is a string that identifies the application accessing a web service.
+
+11. What does page.exists() do?
+
+Answer:
+It checks whether the requested Wikipedia page exists.
+
+12. Why is regex (re) used? (If using your simplified code)
+
+Answer:
+Regex is used to extract specific information like the founded year and founder from the Wikipedia page text.
+
+13. What is Optional in Pydantic?
+
+Answer:
+It allows a field to have a value or be None if the information is unavailable.
+
+14. What happens if the page is not found?
+
+Answer:
+The program displays an error message indicating that the institution does not exist.
+
+15. What is the purpose of the summary?
+
+Answer:
+It provides a short overview of the institution.
+
+16. What are the applications of this experiment?
+
+Answer:
+
+Information retrieval
+Knowledge extraction
+Educational applications
+Search systems
+AI assistants
+17. Explain the flow of Experiment 9.
+
+Answer:
+
+Import required libraries.
+Create the Pydantic model.
+Connect to Wikipedia using the API.
+Search for the institution.
+Extract details.
+Store them in the Pydantic model.
+Display the results.
+18. What is data validation?
+
+Answer:
+Data validation is the process of ensuring that data is correct, complete, and follows the expected format.
+
+19. Why is this experiment useful?
+
+Answer:
+It automates the retrieval and organization of institution information from Wikipedia.
+
+20. Does this experiment train any AI model?
+
+Answer:
+No. It simply retrieves information from Wikipedia and structures it using Pydantic.

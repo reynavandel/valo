@@ -1,0 +1,112 @@
+1. What is the aim of Experiment 2?
+
+Answer:
+To visualize word embeddings using PCA and perform operations like word arithmetic (Exp 2A) or finding similar words (Exp 2B).
+
+2. What is PCA?
+
+Answer:
+PCA (Principal Component Analysis) is a dimensionality reduction technique that converts high-dimensional data into lower dimensions while preserving most of the important information.
+
+3. Why is PCA used in this experiment?
+
+Answer:
+Word embeddings are 100-dimensional vectors. PCA reduces them to 2 dimensions so they can be visualized on a graph.
+
+4. What library is used for PCA?
+
+Answer:
+sklearn.decomposition.PCA
+
+5. What is the purpose of matplotlib?
+
+Answer:
+It is used to plot and visualize the word embeddings on a graph.
+
+6. What does plt.scatter() do?
+
+Answer:
+It plots the words as points on a 2D graph.
+
+7. Why do we use plt.text()?
+
+Answer:
+It displays the corresponding word beside each plotted point.
+
+8. Why do similar words appear close together in the graph?
+
+Answer:
+Because similar words have similar vector representations, so PCA places them near each other.
+
+9. What is the purpose of the visualize() function?
+
+Answer:
+It converts word vectors into 2D using PCA and displays them on a scatter plot.
+
+10. What is the input to the visualize() function?
+
+Answer:
+A list of words whose embeddings need to be visualized.
+
+11. What does wv[w] return?
+
+Answer:
+It returns the word embedding (vector) of the word w.
+
+12. What is the difference between Experiment 2A and Experiment 2B?
+
+Answer:
+
+Experiment 2A performs word arithmetic and visualization.
+Experiment 2B finds top similar words and visualization.
+13. What is word arithmetic?
+
+Answer:
+It performs mathematical operations on word vectors to discover semantic relationships.
+
+Example:
+King − Man + Woman = Queen
+
+14. What does most_similar() do in Experiment 2B?
+
+Answer:
+It returns the top 5 words that are semantically similar to the given word.
+
+15. Which pre-trained model is used?
+
+Answer:
+glove-wiki-gigaword-100
+
+16. What does topn=5 mean?
+
+Answer:
+It returns the top 5 most similar words.
+
+17. Why do we use pre-trained embeddings instead of training a model?
+
+Answer:
+Pre-trained embeddings are already trained on large datasets, making them accurate and saving training time.
+
+18. What are word embeddings?
+
+Answer:
+Word embeddings are numerical vector representations of words that capture semantic meaning and relationships.
+
+19. What are some applications of PCA?
+
+Answer:
+
+Data visualization
+Dimensionality reduction
+Noise reduction
+Machine Learning preprocessing
+20. Explain the flow of Experiment 2.
+
+Answer:
+
+Import required libraries.
+Load the pre-trained GloVe model.
+Extract word vectors.
+Apply PCA to reduce dimensions from 100D to 2D.
+Plot the graph.
+Perform word arithmetic (Exp 2A) or retrieve similar words (Exp 2B).

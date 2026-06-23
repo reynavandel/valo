@@ -1,0 +1,108 @@
+1. What is the aim of Experiment 7?
+
+Answer:
+To summarize a given text using a pre-trained Hugging Face summarization model.
+
+2. What is text summarization?
+
+Answer:
+Text summarization is the process of generating a shorter version of a text while preserving its main ideas.
+
+3. Which library is used in this experiment?
+
+Answer:
+The Transformers library by Hugging Face.
+
+4. Which model is used?
+
+Answer:
+T5-small (t5-small)
+
+5. What is T5?
+
+Answer:
+T5 (Text-to-Text Transfer Transformer) is a Transformer model that converts every NLP task into a text-to-text problem.
+
+6. What does pipeline("summarization") do?
+
+Answer:
+It loads a pre-trained summarization model and generates summaries for input text.
+
+7. Why is t5-small used?
+
+Answer:
+It is a lightweight, fast, and pre-trained model suitable for text summarization.
+
+8. What is a pre-trained model?
+
+Answer:
+A pre-trained model is already trained on a large dataset and can be directly used for NLP tasks without training from scratch.
+
+9. What is the purpose of max_length?
+
+Answer:
+It specifies the maximum number of tokens in the generated summary.
+
+10. What is the purpose of min_length?
+
+Answer:
+It specifies the minimum number of tokens in the generated summary.
+
+11. What does do_sample=False mean?
+
+Answer:
+It makes the model generate a deterministic (consistent) summary instead of random outputs.
+
+12. What is the input and output of this program?
+
+Answer:
+
+Input: A paragraph or document.
+Output: A summarized version of the text.
+13. What are the applications of text summarization?
+
+Answer:
+
+News summarization
+Research paper summarization
+Document summarization
+Email summarization
+Meeting notes
+14. What is a Transformer model?
+
+Answer:
+A Transformer is a deep learning architecture that understands the context and relationships between words in a sequence.
+
+15. What is Hugging Face?
+
+Answer:
+Hugging Face is a platform that provides pre-trained AI models and the Transformers library for various NLP tasks.
+
+16. Why do we use summarization?
+
+Answer:
+To reduce lengthy text into a concise version while retaining important information.
+
+17. Explain the flow of Experiment 7.
+
+Answer:
+
+Import the Transformers library.
+Load the T5-small summarization model.
+Provide the input text.
+Generate the summary.
+Display the summarized text.
+18. Does this experiment require training the model?
+
+Answer:
+No. It uses a pre-trained T5 model.
+
+19. What is the advantage of T5?
+
+Answer:
+It can perform multiple NLP tasks such as summarization, translation, question answering, and text generation using the same architecture.
+
+20. Why is T5 called a Text-to-Text model?
+
+Answer:
+Because both the input and output are text, regardless of the NLP task being performed.

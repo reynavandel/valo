@@ -1,0 +1,109 @@
+1. What is the aim of Experiment 10?
+
+Answer:
+To use a Large Language Model (LLM) to answer user questions by retrieving relevant information from a PDF document using Retrieval-Augmented Generation (RAG).
+
+2. What is RAG?
+
+Answer:
+RAG (Retrieval-Augmented Generation) is a technique that first retrieves relevant information from documents and then uses an LLM to generate accurate answers.
+
+3. What is a Large Language Model (LLM)?
+
+Answer:
+An LLM is an AI model trained on massive text datasets to understand and generate human-like language.
+
+4. Which LLM is used in this experiment?
+
+Answer:
+Cohere Command-R model.
+
+5. What is LangChain?
+
+Answer:
+LangChain is a framework used to build applications using Large Language Models.
+
+6. Why is LangChain used?
+
+Answer:
+It simplifies connecting LLMs with external data sources such as PDFs, databases, and APIs.
+
+7. What is Retrieval-Augmented Generation (RAG)?
+
+Answer:
+RAG combines document retrieval with text generation so that the LLM answers using the retrieved document instead of only its pre-trained knowledge.
+
+8. What is a Vector Database?
+
+Answer:
+A Vector Database stores embeddings (vector representations) of documents and enables similarity search.
+
+9. Which vector database is commonly used in this experiment?
+
+Answer:
+Chroma DB (Chroma Vector Store).
+
+10. Why do we convert text into embeddings?
+
+Answer:
+Embeddings convert text into numerical vectors so that semantically similar content can be searched efficiently.
+
+11. What are embeddings?
+
+Answer:
+Embeddings are numerical vector representations of text that capture semantic meaning.
+
+12. What is a Retriever?
+
+Answer:
+A Retriever searches the vector database and returns the most relevant document chunks related to the user's query.
+
+13. Why is the PDF split into chunks?
+
+Answer:
+Large documents cannot be processed at once, so they are divided into smaller chunks for efficient retrieval.
+
+14. What is the purpose of a Text Splitter?
+
+Answer:
+It divides large documents into smaller overlapping chunks before creating embeddings.
+
+15. What is Prompt Engineering?
+
+Answer:
+Prompt engineering is designing effective prompts to obtain accurate responses from an LLM.
+
+16. What is the role of the API key?
+
+Answer:
+The API key authenticates the user and provides access to Cohere's cloud-based LLM.
+
+17. Explain the flow of Experiment 10.
+
+Answer:
+
+Load the PDF document.
+Split the document into chunks.
+Convert chunks into embeddings.
+Store embeddings in a vector database.
+Retrieve relevant chunks for the query.
+Send the retrieved context to the Cohere LLM.
+Generate and display the final answer.
+18. What are the applications of RAG?
+
+Answer:
+
+PDF Question Answering
+Chatbots
+Enterprise Search
+Knowledge Assistants
+Customer Support
+19. What is the advantage of RAG over a normal LLM?
+
+Answer:
+RAG retrieves information from external documents, making responses more accurate and up-to-date.
+
+20. Why is Experiment 10 considered more advanced than the previous experiments?
+
+Answer:
+Because it combines multiple technologies—LangChain, embeddings, vector database, document retrieval, and an LLM—to answer questions from external documents.

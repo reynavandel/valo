@@ -1,0 +1,113 @@
+1. What is the aim of Experiment 5?
+
+Answer:
+To use word embeddings to generate meaningful sentences and create a short paragraph from a given seed word.
+
+2. What is a seed word?
+
+Answer:
+A seed word is the initial input word provided by the user to generate similar words and create a paragraph.
+
+Example: ocean, adventure, technology
+
+3. Which word embedding model is used?
+
+Answer:
+GloVe (glove-wiki-gigaword-100)
+
+4. Why is GloVe used?
+
+Answer:
+GloVe is used to find semantically similar words for the given seed word.
+
+5. What does most_similar() do?
+
+Answer:
+It retrieves the top-N semantically similar words for the given word.
+
+6. What is the purpose of get_similar_words()?
+
+Answer:
+It retrieves the top 5 similar words from the GloVe model.
+
+7. What is the purpose of generate_sentence()?
+
+Answer:
+It creates a meaningful sentence using the seed word and the retrieved similar words.
+
+8. What is the purpose of generate_paragraph()?
+
+Answer:
+It combines multiple generated sentences into a short creative paragraph.
+
+9. Why is random.choice() used?
+
+Answer:
+It randomly selects one sentence template, making the generated paragraph different each time.
+
+10. What happens if the seed word is not found?
+
+Answer:
+The program displays a message asking the user to try another word.
+
+11. What is the role of sentence templates?
+
+Answer:
+Sentence templates help generate grammatically meaningful sentences using the similar words.
+
+12. What is word embedding?
+
+Answer:
+Word embedding is a numerical vector representation of words that captures semantic meaning and relationships.
+
+13. What are the applications of this experiment?
+
+Answer:
+
+Story generation
+Creative writing
+Content creation
+Idea generation
+Text generation
+14. Why do we use a pre-trained model instead of training one?
+
+Answer:
+A pre-trained model is already trained on a large dataset, providing accurate semantic relationships without additional training.
+
+15. Why are similar words important?
+
+Answer:
+They help generate richer and more meaningful sentences by providing related vocabulary.
+
+16. Explain the flow of Experiment 5.
+
+Answer:
+
+Import required libraries.
+Load the pre-trained GloVe model.
+Accept a seed word from the user.
+Retrieve the top 5 similar words.
+Generate sentences using templates.
+Combine the sentences into a paragraph.
+Display the generated paragraph.
+17. What is creative text generation?
+
+Answer:
+Creative text generation is the automatic generation of meaningful and readable text using AI techniques.
+
+18. Can different seed words produce different stories?
+
+Answer:
+Yes. Different seed words generate different similar words, resulting in different paragraphs.
+
+19. What is the advantage of using word embeddings for creative writing?
+
+Answer:
+Word embeddings help generate contextually related words, making the generated text more meaningful and natural.
+
+20. How is Experiment 5 different from Experiment 4?
+
+Answer:
+
+Experiment 4 improves a prompt and uses GPT-2 to generate text.
+Experiment 5 uses GloVe word embeddings and sentence templates to generate a creative paragraph without a Generative AI model.

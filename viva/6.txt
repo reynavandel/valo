@@ -1,0 +1,110 @@
+1. What is the aim of Experiment 6?
+
+Answer:
+To analyze the sentiment of text using a pre-trained Hugging Face model.
+
+2. What is Sentiment Analysis?
+
+Answer:
+Sentiment Analysis is an NLP technique used to determine whether a piece of text expresses a positive, negative, or neutral emotion.
+
+3. Which library is used in this experiment?
+
+Answer:
+The Transformers library by Hugging Face.
+
+4. Which model is used?
+
+Answer:
+By default, the Hugging Face pipeline loads DistilBERT (distilbert-base-uncased-finetuned-sst-2-english) for sentiment analysis.
+
+5. What is DistilBERT?
+
+Answer:
+DistilBERT is a lightweight and faster version of BERT that performs NLP tasks efficiently.
+
+6. What does pipeline("sentiment-analysis") do?
+
+Answer:
+It automatically loads a pre-trained sentiment analysis model and tokenizer.
+
+7. Why do we use a pre-trained model?
+
+Answer:
+It is already trained on a large dataset, so we don't need to train it ourselves.
+
+8. What is the purpose of the analyze() function?
+
+Answer:
+It takes a text input, analyzes its sentiment, and displays the sentiment label and confidence score.
+
+9. What is a confidence score?
+
+Answer:
+It indicates how confident the model is about its prediction. The value ranges from 0 to 1, where values closer to 1 indicate higher confidence.
+
+10. What are the possible output labels?
+
+Answer:
+POSITIVE and NEGATIVE.
+
+(In this model, neutral sentences may still be classified as positive or negative.)
+
+11. What is the role of the Transformers library?
+
+Answer:
+It provides pre-trained transformer models for NLP tasks such as sentiment analysis, text generation, summarization, and translation.
+
+12. What is NLP?
+
+Answer:
+Natural Language Processing (NLP) is a branch of Artificial Intelligence that enables computers to understand and process human language.
+
+13. Why is the sentence "It was an average experience." classified as NEGATIVE?
+
+Answer:
+The model predicts the closest sentiment based on its training data. Since it only predicts POSITIVE or NEGATIVE, neutral sentences are often classified as one of these two.
+
+14. What are the real-world applications of Sentiment Analysis?
+
+Answer:
+
+Customer feedback analysis
+Product review analysis
+Social media monitoring
+Brand reputation analysis
+Market research
+15. What is the input and output of this program?
+
+Answer:
+
+Input: Text or sentence
+Output: Sentiment label and confidence score
+16. Explain the flow of Experiment 6.
+
+Answer:
+
+Import the Transformers library.
+Load the sentiment analysis pipeline.
+Provide input text.
+The model predicts the sentiment.
+Display the sentiment label and confidence score.
+17. What is a Transformer model?
+
+Answer:
+A Transformer is a deep learning architecture designed to understand the context and relationships between words in a sentence.
+
+18. What is Hugging Face?
+
+Answer:
+Hugging Face is a platform that provides pre-trained AI models and the Transformers library for various NLP tasks.
+
+19. Can this model analyze multiple sentences?
+
+Answer:
+Yes. The program loops through multiple customer reviews and analyzes each one individually.
+
+20. Why is this experiment useful?
+
+Answer:
+It enables automatic analysis of customer opinions and emotions, helping businesses understand user feedback efficiently.

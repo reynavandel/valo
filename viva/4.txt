@@ -1,0 +1,112 @@
+1. What is the aim of Experiment 4?
+
+Answer:
+To improve a Generative AI prompt using word embeddings and compare the responses generated for the original and enriched prompts.
+
+2. What are word embeddings?
+
+Answer:
+Word embeddings are numerical vector representations of words that capture semantic meaning and relationships.
+
+3. Which word embedding model is used?
+
+Answer:
+GloVe (glove-wiki-gigaword-100)
+
+4. What is GPT-2?
+
+Answer:
+GPT-2 is a Transformer-based Generative AI model used for text generation.
+
+5. Which library is used to load GPT-2?
+
+Answer:
+The Transformers library by Hugging Face.
+
+6. What is the purpose of pipeline()?
+
+Answer:
+It loads a pre-trained NLP model for a specific task such as text generation or sentiment analysis.
+
+7. What does pipeline("text-generation") do?
+
+Answer:
+It loads the GPT-2 model for generating text from a given prompt.
+
+8. Why is GloVe used in this experiment?
+
+Answer:
+GloVe is used to find semantically similar words that enrich the original prompt.
+
+9. What is prompt enrichment?
+
+Answer:
+Prompt enrichment is the process of improving a prompt by replacing important words with semantically similar words.
+
+10. Why do we replace the keyword?
+
+Answer:
+To provide a richer context so that the AI model generates more meaningful and detailed responses.
+
+11. What does most_similar() do?
+
+Answer:
+It retrieves the top similar words to the given keyword using word embeddings.
+
+12. What does word_tokenize() do?
+
+Answer:
+It splits the input sentence into individual words (tokens).
+
+13. Why is string.punctuation used?
+
+Answer:
+To remove punctuation marks before comparing words.
+
+14. What is the purpose of replace_keyword_in_prompt()?
+
+Answer:
+It replaces the specified keyword in the prompt with its most similar word from GloVe.
+
+15. What is the purpose of generate_response()?
+
+Answer:
+It sends the prompt to GPT-2 and returns the generated text.
+
+16. Why are the original and enriched prompts compared?
+
+Answer:
+To observe whether prompt enrichment improves the quality and detail of the generated response.
+
+17. How is the comparison done?
+
+Answer:
+By comparing:
+
+Response length
+Number of sentences/details
+Overall relevance
+18. What are the applications of prompt engineering?
+
+Answer:
+
+Chatbots
+AI assistants
+Content generation
+Question answering
+Text summarization
+19. Explain the flow of Experiment 4.
+
+Answer:
+
+Import required libraries.
+Load GloVe word embeddings.
+Tokenize the prompt.
+Replace the keyword with a similar word.
+Load the GPT-2 model.
+Generate responses for both prompts.
+Compare the outputs.
+20. What is the main advantage of prompt enrichment?
+
+Answer:
+Prompt enrichment provides better context, resulting in more relevant, meaningful, and detailed AI-generated responses.
